@@ -14,7 +14,7 @@
     width: 100%;
 }
 .debug header .col{
-    height: 200px;
+    height: 50px;
     background-color: blueviolet;
 }
 /* /parte header */
@@ -30,6 +30,18 @@
     border: 2px dashed black;
 }
 /* /parte main */
+
+/* parte footer  */
+.debug footer .row{
+    background-color: aqua;
+    width: 100%;
+}
+.debug footer .col{
+    height: 50px;
+    background-color: blueviolet;
+    border: 2px dashed black;
+}
+/* /parte footer  */
 
 /* COMMON */
 
@@ -70,3 +82,12 @@ main .col{
 }
 
 /* FOOTER */
+
+footer .row{
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+}
+footer .col{
+    width: 50%;
+}
