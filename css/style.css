@@ -9,14 +9,14 @@
 /* DEBUG */
 
 /* parte header */
-.debug header .row{
+/* .debug header .row{
     background-color: aqua;
     width: 100%;
 }
 .debug header .col{
     height: 50px;
     background-color: blueviolet;
-}
+} */
 /* /parte header */
 
 /* parte main */
@@ -52,15 +52,25 @@
 
 /* TIPOGRAPHY */
 
+header a{
+    color: white;
+    text-decoration: none;
+}
 body{
     font-family: 'Roboto', sans-serif;
 }
 
+
 /* HEADER  */
 
+header{
+    background-color: #FF6900;
+}
 header .row{
     display: flex;
     justify-content: space-between;
+    align-items: center;
+    padding: 10px 0px;
 }
 header .col:nth-child(odd){
     width: 20%;
@@ -68,6 +78,22 @@ header .col:nth-child(odd){
 header .col:nth-child(even){
     width: 60%;
 }
+
+/* colonna sinistra */
+a{
+    padding: 5px;
+}
+
+/* colonna centrale */
+header .logo{
+    text-align: center;
+}
+header .logo img{
+    height: 30px;
+}
+
+/* colonna destra */
+
 
 /* MAIN  */
 
