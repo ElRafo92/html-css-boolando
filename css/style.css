@@ -8,15 +8,28 @@
 
 /* DEBUG */
 
-.debug .row{
+/* parte header */
+.debug header .row{
     background-color: aqua;
     width: 100%;
 }
-.debug .col{
+.debug header .col{
     height: 200px;
-    width: 200px;
     background-color: blueviolet;
 }
+/* /parte header */
+
+/* parte main */
+.debug main .row{
+    background-color: aqua;
+    width: 100%;
+}
+.debug main .col{
+    height: 300px;
+    background-color: blueviolet;
+    border: 2px dashed black;
+}
+/* /parte main */
 
 /* COMMON */
 
@@ -31,20 +44,29 @@ body{
     font-family: 'Roboto', sans-serif;
 }
 
-/* HEAD  */
+/* HEADER  */
 
 header .row{
     display: flex;
     justify-content: space-between;
 }
-.col:nth-child(odd){
+header .col:nth-child(odd){
     width: 20%;
 }
-.col:nth-child(even){
+header .col:nth-child(even){
     width: 60%;
 }
 
-
 /* MAIN  */
+
+main .row{
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    padding: 20px;
+}
+main .col{
+    width: calc(33% - 20px);
+}
 
 /* FOOTER */
