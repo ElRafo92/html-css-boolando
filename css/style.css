@@ -20,7 +20,7 @@
 /* /parte header */
 
 /* parte main */
-.debug main .row{
+/* .debug main .row{
     background-color: aqua;
     width: 100%;
 }
@@ -28,7 +28,7 @@
     height: 300px;
     background-color: blueviolet;
     border: 2px dashed black;
-}
+} */
 /* /parte main */
 
 /* parte footer  */
@@ -71,6 +71,12 @@ footer strong{
 }
 footer .col-left{
     font-size: 20px;
+}
+main .price{
+    color: red;
+}
+main .sconto{
+    text-decoration: line-through;
 }
 
 /* HEADER  */
@@ -122,6 +128,58 @@ main .row{
 }
 main .col{
     width: calc(33% - 20px);
+    position: relative;
+}
+main img{
+    width: 100%;
+}
+main .info{
+    margin-bottom: 30px;
+}
+.real{
+    position: absolute;
+    top: 0%;
+    left: 0%;
+    right: 0%;
+}
+.hidden{
+    position: relative;
+}
+.real:hover{
+    display: none;
+    transition: 0.5ms;
+}
+
+
+/* etichette e cuore */
+.sconto-percentuale{
+    background-color: red;
+    text-align: center;
+    padding: 5px 10px;
+    color: white;
+    position: absolute;
+    bottom: 20%;
+}
+.eco{
+    background-color: green;
+    text-align: center;
+    padding: 5px 10px;
+    color: white;
+    position: absolute;
+    bottom: 20%;
+    left: 17%;
+}
+.cuore{
+    background-color: white;
+    text-align: center;
+    padding: 10px;
+    color: black;
+    position: absolute;
+    top: 2%;
+    right: 0%;
+}
+.cuore:hover{
+    color: red;
 }
 
 /* FOOTER */
