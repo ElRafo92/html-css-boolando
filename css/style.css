@@ -72,21 +72,24 @@ header .row{
     align-items: center;
     padding: 10px 0px;
 }
+header .col{
+    display: flex;
+}
 header .col:nth-child(odd){
     width: 20%;
 }
 header .col:nth-child(even){
     width: 60%;
 }
-
-/* colonna sinistra */
-a{
+header a{
     padding: 5px;
 }
 
+/* colonna sinistra */
+
 /* colonna centrale */
-header .logo{
-    text-align: center;
+header .col-mid{
+    justify-content: center;
 }
 header .logo img{
     height: 30px;
