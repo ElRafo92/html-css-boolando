@@ -93,7 +93,9 @@ header .logo img{
 }
 
 /* colonna destra */
-
+header .col-right{
+    justify-content: flex-end;
+}
 
 /* MAIN  */
 
