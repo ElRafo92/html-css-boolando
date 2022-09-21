@@ -8,7 +8,22 @@
 
 /* DEBUG */
 
+.debug .row{
+    background-color: aqua;
+    width: 100%;
+}
+.debug .col{
+    height: 200px;
+    width: 200px;
+    background-color: blueviolet;
+}
+
 /* COMMON */
+
+.container{
+    max-width: 1200px;
+    margin: auto;
+}
 
 /* TIPOGRAPHY */
 
@@ -17,6 +32,18 @@ body{
 }
 
 /* HEAD  */
+
+header .row{
+    display: flex;
+    justify-content: space-between;
+}
+.col:nth-child(odd){
+    width: 20%;
+}
+.col:nth-child(even){
+    width: 60%;
+}
+
 
 /* MAIN  */
 
