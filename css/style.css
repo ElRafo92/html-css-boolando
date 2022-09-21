@@ -32,7 +32,7 @@
 /* /parte main */
 
 /* parte footer  */
-.debug footer .row{
+/* .debug footer .row{
     background-color: aqua;
     width: 100%;
 }
@@ -40,7 +40,7 @@
     height: 50px;
     background-color: blueviolet;
     border: 2px dashed black;
-}
+} */
 /* /parte footer  */
 
 /* COMMON */
@@ -59,7 +59,19 @@ header a{
 body{
     font-family: 'Roboto', sans-serif;
 }
-
+footer{
+    color: white;
+}
+footer a{
+    color: white;
+    text-decoration: none;
+}
+footer strong{
+    font-size: 25px;
+}
+footer .col-left{
+    font-size: 20px;
+}
 
 /* HEADER  */
 
@@ -114,11 +126,28 @@ main .col{
 
 /* FOOTER */
 
+footer{
+    background-color: black;
+}
 footer .row{
     display: flex;
     justify-content: space-between;
     width: 100%;
+    padding: 30px;
 }
 footer .col{
     width: 50%;
+    padding: 10px 0px;
+}
+footer a:nth-child(even){
+    padding: 10px;
+}
+.footlink, .foot-icons{
+    margin-top: 10px;
+}
+footer .banner{
+    display: block;
+}
+footer .col-left{
+    text-align: right;
 }
